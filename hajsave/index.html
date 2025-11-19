@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HajSave - Haj va Umra uchun ishonchli jamg'arma platformasi">
+    <meta name="keywords" content="Haj, Umra, jamg'arma, sayohat, islom">
+    <title>HajSave - Haj va Umra Jamg'arma Platformasi</title>
+   
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
+   
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>" type="image/svg+xml">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="islamic-pattern"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="kaaba-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
+                    </div>
+                    <span>HajSave</span>
+                </div>
+               
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link active" onclick="navigateTo('home')">Bosh sahifa</a>
+                    <a href="#dashboard" class="nav-link" onclick="navigateTo('dashboard')">Dashboard</a>
+                    <a href="#funds" class="nav-link" onclick="navigateTo('funds')">To'ldirish</a>
+                    <a href="#travel" class="nav-link" onclick="navigateTo('travel')">Safar</a>
+                    <a href="#settings" class="nav-link" onclick="navigateTo('settings')">Sozlamalar</a>
+                    <button class="btn btn-primary" onclick="navigateTo('login')">
+                        <i data-lucide="log-in" style="width:18px;height:18px"></i>
+                        <span>Kirish</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div>
+                        <h1 class="hero-title">
+                            Haj va Umra <span class="gradient-text">Jamg'arma</span> Yo'lingiz
+                        </h1>
+                        <p class="hero-description">
+                            Har oy avtomatik jamg'arib, muqaddas ziyoratga tayyor bo'ling. Ishonchli, shaffof va qulay.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary btn-lg" onclick="navigateTo('dashboard')">
+                                <i data-lucide="arrow-right" style="width:20px;height:20px"></i>
+                                Boshlash
+                            </a>
+                            <a href="#" class="btn btn-secondary btn-lg" onclick="navigateTo('travel')">
+                                <i data-lucide="plane" style="width:20px;height:20px"></i>
+                                Safar haqida
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-image">
+                            <img src="assets/images/kaaba.jpg" alt="Kaaba - Makkah al-Mukarramah" class="kaaba-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="floating-cards">
+                            <div class="floating-card card-1">
+                                <div class="card-icon">
+                                    <i data-lucide="trending-up"></i>
+                                </div>
+                                <h3>Jamg'arma</h3>
+                                <div class="card-amount">12M so'm</div>
+                                <p>jami to'plangan</p>
+                            </div>
+                            <div class="floating-card card-2">
+                                <div class="card-icon">
+                                    <i data-lucide="target"></i>
+                                </div>
+                                <h3>Maqsad</h3>
+                                <div class="card-amount">70M so'm</div>
+                                <p>umumiy maqsad</p>
+                            </div>
+                            <div class="floating-card card-3">
+                                <div class="card-icon">
+                                    <i data-lucide="calendar"></i>
+                                </div>
+                                <h3>Muddat</h3>
+                                <div class="card-amount">18 oy</div>
+                                <p>qolgan vaqt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="stat-number" data-count="12500">0</div>
+                        <h3>Foydalanuvchilar</h3>
+                        <p>Platformamizda faol</p>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">
+                            <i data-lucide="wallet"></i>
+                        </div>
+                        <div class="stat-number" data-count="850">0</div>
+                        <h3>Million so'm</h3>
+                        <p>Jami jamg'arilgan</p>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <div class="stat-number" data-count="3200">0</div>
+                        <h3>Muvaffaqiyatli safar</h3>
+                        <p>Amalga oshirilgan</p>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon">
+                            <i data-lucide="star"></i>
+                        </div>
+                        <div class="stat-number" data-count="4.9">0</div>
+                        <h3>Reyting</h3>
+                        <p>Foydalanuvchi bahosi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Nima uchun <span class="gradient-text">HajSave</span>?</h2>
+                    <p>Zamonaviy, xavfsiz va islomiy qadriyatlarga mos jamg'arma tizimi</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Xavfsizlik</h3>
+                        <p>Ma'lumotlar shifrlanadi, pul xavfsiz saqlanadi</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <i data-lucide="repeat"></i>
+                        </div>
+                        <h3>Avto-jamg'arma</h3>
+                        <p>Har oy avto-to'lov, qo'lda boshqarish shart emas</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Mobil ilova</h3>
+                        <p>Telefoningizdan barcha jarayonlarni kuzatib boring</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <h3>24/7 Yordam</h3>
+                        <p>Har qanday savolga tezkor javob</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DASHBOARD PAGE -->
+    <section id="dashboard" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <p>Jamg'arma jarayoningizni kuzatib boring</p>
+            </div>
+
+            <div class="journey-section">
+                <div class="card">
+                    <h2 class="card-title">Sizning Haj Yo'lingiz</h2>
+                    <div class="journey-track">
+                        <div class="journey-path">
+                            <div class="journey-progress" id="journeyProgress"></div>
+                        </div>
+                        <div class="journey-icon" id="journeyIcon">
+                            <i data-lucide="plane" style="width:40px;height:40px;color:#ffd700"></i>
+                        </div>
+                        <div class="journey-goal">🕋</div>
+                    </div>
+                    <div class="journey-info">
+                        <span>Joriy holat</span>
+                        <span class="journey-percent">17% to'ldirilgan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3 class="card-subtitle">Jami balans</h3>
+                    <div class="balance-amount">12,000,000</div>
+                    <div class="balance-currency">UZS</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="balanceProgress"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span>17% to'ldirilgan</span>
+                        <span>70,000,000 so'm</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-subtitle">Jamg'arma grafigi</h3>
+                    <div class="chart-container">
+                        <div class="chart-bar" style="height: 40%" data-month="Yan"></div>
+                        <div class="chart-bar" style="height: 55%" data-month="Fev"></div>
+                        <div class="chart-bar" style="height: 70%" data-month="Mar"></div>
+                        <div class="chart-bar" style="height: 65%" data-month="Apr"></div>
+                        <div class="chart-bar" style="height: 80%" data-month="May"></div>
+                        <div class="chart-bar" style="height: 90%" data-month="Iyn"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-subtitle">Avto-jamg'arma</h3>
+                <div class="auto-save-amount">
+                    <div class="amount-value">3,000,000</div>
+                    <p>so'm – har oyning 1-kuni</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-subtitle">So'nggi tranzaksiyalar</h3>
+                <div class="transactions-list" id="transactionsList">
+                    <!-- JS orqali to'ldiriladi -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNDS PAGE -->
+    <section id="funds" class="page">
+        <div class="container funds-container">
+            <div class="page-header">
+                <h1>To'lov qo'shish</h1>
+                <p>Hisobingizni istalgan usul bilan to'ldiring</p>
+            </div>
+
+            <div class="card">
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="paymentAmount">
+                            <i data-lucide="banknote" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
+                            To'lov miqdori
+                        </label>
+                        <input type="number" id="paymentAmount" class="form-control" placeholder="10,000,000" min="10000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>To'lov usuli</label>
+                        <div class="payment-methods">
+                            <div class="payment-card active" data-method="payme">
+                                <div class="payment-icon">
+                                    <i data-lucide="credit-card"></i>
+                                </div>
+                                <span>Payme</span>
+                            </div>
+                            <div class="payment-card" data-method="click">
+                                <div class="payment-icon">
+                                    <i data-lucide="zap"></i>
+                                </div>
+                                <span>Click</span>
+                            </div>
+                            <div class="payment-card" data-method="uzum">
+                                <div class="payment-icon">
+                                    <i data-lucide="wallet"></i>
+                                </div>
+                                <span>Uzum Bank</span>
+                            </div>
+                            <div class="payment-card" data-method="card">
+                                <div class="payment-icon">
+                                    <i data-lucide="credit-card"></i>
+                                </div>
+                                <span>Karta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-summary">
+                        <div class="summary-row">
+                            <span>To'lov miqdori</span>
+                            <span id="summaryAmount">0 so'm</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row summary-total">
+                            <span>Jami</span>
+                            <span id="summaryTotal">0 so'm</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="processPayment()">
+                        <i data-lucide="check" style="width:20px;height:20px"></i>
+                        To'lovni amalga oshirish
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL PAGE -->
+    <section id="travel" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Haj va Umra Safarlari</h1>
+                <p>Eng yaxshi paketlar va shartlar</p>
+            </div>
+
+            <div class="travel-grid">
+                <div class="travel-card card">
+                    <div class="travel-icon">🕋</div>
+                    <h3 class="travel-title">Haj 2026</h3>
+                    <p class="travel-subtitle">To'liq paket – 5 yulduzli mehmonxona</p>
+                    <div class="travel-details">
+                        <div class="detail-row">
+                            <span><i data-lucide="banknote" style="width:16px;height:16px"></i> Narxi</span>
+                            <span>70,000,000 so'm</span>
+                        </div>
+                        <div class="detail-row">
+                            <span><i data-lucide="clock" style="width:16px;height:16px"></i> Davomiyligi</span>
+                            <span>40 kun</span>
+                        </div>
+                        <div class="detail-row">
+                            <span><i data-lucide="map-pin" style="width:16px;height:16px"></i> Chiqish</span>
+                            <span>Toshkent</span>
+                        </div>
+                    </div>
+                    <p class="progress-text">Sizda: 12M / 70M (17%)</p>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('funds')">
+                        <i data-lucide="plus" style="width:18px;height:18px"></i>
+                        To'ldirish
+                    </button>
+                </div>
+
+                <div class="travel-card card">
+                    <div class="travel-icon">🕌</div>
+                    <h3 class="travel-title">Umra Ramazon</h3>
+                    <p class="travel-subtitle">Ekonom paket – 3 yulduz</p>
+                    <div class="travel-details">
+                        <div class="detail-row">
+                            <span><i data-lucide="banknote" style="width:16px;height:16px"></i> Narxi</span>
+                            <span>25,000,000 so'm</span>
+                        </div>
+                        <div class="detail-row">
+                            <span><i data-lucide="clock" style="width:16px;height:16px"></i> Davomiyligi</span>
+                            <span>12 kun</span>
+                        </div>
+                        <div class="detail-row">
+                            <span><i data-lucide="map-pin" style="width:16px;height:16px"></i> Chiqish</span>
+                            <span>Toshkent</span>
+                        </div>
+                    </div>
+                    <p class="progress-text">Sizda: 12M / 25M (48%)</p>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('funds')">
+                        <i data-lucide="plus" style="width:18px;height:18px"></i>
+                        To'ldirish
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Bog'lanish usullari</h3>
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-value">+998 99 123 45 67</div>
+                            <div class="contact-time">9:00 – 21:00</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="send"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-value">@HajSaveSupport</div>
+                            <div class="contact-time">Tezkor javob</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Paketga nimalar kiradi?</h3>
+                <div class="includes-grid">
+                    <div class="include-item">
+                        <div class="include-icon">
+                            <i data-lucide="plane"></i>
+                        </div>
+                        <h4>Aviachipta</h4>
+                        <p>Toshkent – Jidda – Toshkent</p>
+                    </div>
+                    <div class="include-item">
+                        <div class="include-icon">
+                            <i data-lucide="hotel"></i>
+                        </div>
+                        <h4>Mehmonxona</h4>
+                        <p>5 yulduz, nonushta</p>
+                    </div>
+                    <div class="include-item">
+                        <div class="include-icon">
+                            <i data-lucide="bus"></i>
+                        </div>
+                        <h4>Transport</h4>
+                        <p>Makka – Madina</p>
+                    </div>
+                    <div class="include-item">
+                        <div class="include-icon">
+                            <i data-lucide="user-check"></i>
+                        </div>
+                        <h4>Gid</h4>
+                        <p>O'zbek tilida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SETTINGS PAGE -->
+    <section id="settings" class="page">
+        <div class="container settings-container">
+            <div class="page-header">
+                <h1>Sozlamalar</h1>
+                <p>Profil va xavfsizlikni boshqaring</p>
+            </div>
+
+            <div class="card">
+                <div class="profile-avatar">
+                    <div class="avatar-circle">A</div>
+                    <div>
+                        <h3>Ahmad Karimov</h3>
+                        <p>ahmad@example.com</p>
+                    </div>
+                </div>
+
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label>
+                            <i data-lucide="user" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
+                            Ism
+                        </label>
+                        <input type="text" class="form-control" value="Ahmad Karimov">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
+                            Email
+                        </label>
+                        <input type="email" class="form-control" value="ahmad@example.com">
+                    </div>
+                    <button class="btn btn-primary">
+                        <i data-lucide="save" style="width:18px;height:18px"></i>
+                        Saqlash
+                    </button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Xavfsizlik</h3>
+                <div class="security-feature">
+                    <div>
+                        <h4>
+                            <i data-lucide="shield" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
+                            Ikki bosqichli autentifikatsiya
+                        </h4>
+                        <p>Hisobingizni qo'shimcha himoya qiling</p>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Bildirishnomalar</h3>
+                <div class="notification-item">
+                    <div>
+                        <h4>
+                            <i data-lucide="bell" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
+                            To'lov bildirishnomasi
+                        </h4>
+                        <p>Har bir to'lov haqida xabar</p>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="notification-item">
+                    <div>
+                        <h4>
+                            <i data-lucide="target" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
+                            Maqsad yaqinlashganda
+                        </h4>
+                        <p>80% ga yetganda eslatma</p>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn btn-danger" onclick="logout()">
+                <i data-lucide="log-out" style="width:18px;height:18px"></i>
+                Chiqish
+            </button>
+        </div>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page">
+        <div class="login-container">
+            <div class="login-card card">
+                <div class="login-header">
+                    <div class="kaaba-icon large">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
+                    </div>
+                    <h1>HajSave</h1>
+                    <p>Xush kelibsiz! Hisobingizga kiring</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label>
+                            <i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
+                            Email yoki telefon
+                        </label>
+                        <input type="text" class="form-control" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <i data-lucide="lock" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
+                            Parol
+                        </label>
+                        <input type="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>Eslab qolish</span>
+                        </label>
+                        <a href="#" class="forgot-link">Parolni unutdingizmi?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <i data-lucide="log-in" style="width:20px;height:20px"></i>
+                        Kirish
+                    </button>
+                </form>
+
+                <div class="divider">YOKI</div>
+
+                <button class="btn btn-secondary btn-block" onclick="showRegister(event)">
+                    <i data-lucide="user-plus" style="width:18px;height:18px"></i>
+                    Yangi hisob yaratish
+                </button>
+
+                <p class="register-link">
+                    Hisobingiz yo'qmi? <a href="#">Ro'yxatdan o'ting</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="kaaba-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
+                        </div>
+                        <span>HajSave</span>
+                    </div>
+                    <p>Muqaddas joylarga ishonchli yo'lingiz</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Platforma</h4>
+                    <a href="#">Biz haqimizda</a>
+                    <a href="#">Xizmatlar</a>
+                    <a href="#">Narxlar</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Qo'llab-quvvatlash</h4>
+                    <a href="#">Yordam markazi</a>
+                    <a href="#">Bog'lanish</a>
+                    <a href="#">Maxfiylik siyosati</a>
+                    <a href="#">Foydalanish shartlari</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Ijtimoiy tarmoqlar</h4>
+                    <a href="#">Telegram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 HajSave. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/funds.js"></script>
+    <script>
+        // Lucide ikonlarni ishga tushirish
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
+        // Sahifa yuklangandan keyin ikonlarni yangilash
+        window.addEventListener('load', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+        
+        // Dinamik kontent qo'shilganda ikonlarni yangilash
+        const observer = new MutationObserver(function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+╔══════════════════════════════════════════════════════════════╗
+║          🚀 NETLIFY DEPLOY - TEZ YO'RIQNOMA                 ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 USUL 1: DRAG & DROP (1 daqiqa)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. https://netlify.com ga kiring
+2. "Add new site" → "Deploy manually"
+3. Butun "hajsave" papkasini drag & drop qiling
+4. Tayyor! URL: https://your-site.netlify.app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 USUL 2: CLI (3 daqiqa)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+npm install -g netlify-cli
+netlify login
+cd hajsave
+netlify deploy --prod
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 KERAKLI FAYLLAR (✅ Hammasi tayyor!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ netlify.toml      - Netlify konfiguratsiya
+✅ _redirects        - SPA routing
+✅ .gitignore        - Git exclude files
+✅ package.json      - Project metadata
+✅ README.md         - To'liq qo'llanma
+✅ NETLIFY_DEPLOY.md - Batafsil deploy yo'riqnomasi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 BUILD SETTINGS (Netlify'da so'ralsa)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Build command:       echo 'No build required'
+Publish directory:   .
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ XUSUSIYATLAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Avtomatik HTTPS (Let's Encrypt)
+✅ Global CDN (tezkor yuklanish)
+✅ Automatic optimization
+✅ Custom domain support
+✅ Form handling ready
+✅ Serverless functions ready
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 YORDAM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Batafsil qo'llanma: NETLIFY_DEPLOY.md faylini o'qing

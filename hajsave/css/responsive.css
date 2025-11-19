@@ -1,0 +1,332 @@
+/* ==========================================
+   RESPONSIVE.CSS – HajSave
+   Mobil, planshet, kichik ekranlar uchun
+========================================== */
+
+/* Tablet & Mobile Base */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-visual {
+        height: 500px;
+    }
+
+    .floating-card {
+        width: 240px !important;
+        padding: 25px;
+    }
+
+    .floating-card.card-1 { top: 20px; left: 50%; transform: translateX(-50%); }
+    .floating-card.card-2 { top: 200px; left: 50%; transform: translateX(-50%); }
+    .floating-card.card-3 { top: 380px; left: 50%; transform: translateX(-50%); }
+
+    .stats-grid,
+    .features-grid,
+    .dashboard-grid,
+    .travel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 14, 39, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 20px 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .journey-track {
+        height: 80px;
+        margin: 20px 0;
+    }
+
+    .journey-icon {
+        font-size: 36px;
+    }
+
+    .journey-goal {
+        font-size: 48px;
+    }
+
+    .balance-amount {
+        font-size: 44px;
+    }
+
+    .chart-container {
+        height: 200px;
+    }
+
+    .payment-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 10px;
+    }
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .btn-lg {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        height: 400px;
+    }
+
+    .floating-card {
+        width: 200px !important;
+        padding: 20px;
+    }
+
+    .floating-card.card-1,
+    .floating-card.card-2,
+    .floating-card.card-3 {
+        position: static;
+        margin: 15px auto;
+        transform: none !important;
+    }
+
+    .stats-section,
+    .features-section {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .stat-number {
+        font-size: 44px;
+    }
+
+    .stat-card {
+        padding: 30px 20px;
+    }
+
+    .page-header {
+        margin-bottom: 40px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .journey-track {
+        height: 70px;
+    }
+
+    .journey-icon {
+        font-size: 32px;
+    }
+
+    .journey-goal {
+        font-size: 42px;
+    }
+
+    .balance-amount {
+        font-size: 38px;
+    }
+
+    .transaction-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .transaction-amount {
+        font-size: 24px;
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-card {
+        padding: 20px 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 20px;
+    }
+
+    .includes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .include-item {
+        padding: 20px 15px;
+    }
+
+    .profile-avatar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .balance-amount {
+        font-size: 34px;
+    }
+
+    .amount-value {
+        font-size: 32px;
+    }
+
+    .summary-total span:last-child {
+        font-size: 24px;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .kaaba-icon,
+    .journey-icon,
+    .journey-goal {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
