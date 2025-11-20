@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HajSave - Haj va Umra uchun ishonchli jamg'arma platformasi">
-    <meta name="keywords" content="Haj, Umra, jamg'arma, sayohat, islom">
-    <title>HajSave - Haj va Umra Jamg'arma Platformasi</title>
-   
+    <meta name="description" content="Umra&Haj - Barcha umra va haj yo'llanmalari, tur agentliklar va ellikboshilarni tanlang">
+    <meta name="keywords" content="Umra, Haj, yo'llanma, tur agentlik, ellikboshi, ziyorat, Makka, Madina">
+    <title>Umra&Haj - Online Yo'llanma Platformasi</title>
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-   
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
-   
+    
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>" type="image/svg+xml">
 </head>
@@ -35,15 +35,15 @@
                     <div class="kaaba-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
                     </div>
-                    <span>HajSave</span>
+                    <span>Umra&Haj</span>
                 </div>
-               
+                
                 <div class="nav-links" id="navLinks">
                     <a href="#home" class="nav-link active" onclick="navigateTo('home')">Bosh sahifa</a>
-                    <a href="#dashboard" class="nav-link" onclick="navigateTo('dashboard')">Dashboard</a>
-                    <a href="#funds" class="nav-link" onclick="navigateTo('funds')">To'ldirish</a>
-                    <a href="#travel" class="nav-link" onclick="navigateTo('travel')">Safar</a>
-                    <a href="#settings" class="nav-link" onclick="navigateTo('settings')">Sozlamalar</a>
+                    <a href="#agencies" class="nav-link" onclick="navigateTo('agencies')">Tur agentliklar</a>
+                    <a href="#packages" class="nav-link" onclick="navigateTo('packages')">Yo'llanmalar</a>
+                    <a href="#guides" class="nav-link" onclick="navigateTo('guides')">Ellikboshilar</a>
+                    <a href="#items" class="nav-link" onclick="navigateTo('items')">Kerakli buyumlar</a>
                     <button class="btn btn-primary" onclick="navigateTo('login')">
                         <i data-lucide="log-in" style="width:18px;height:18px"></i>
                         <span>Kirish</span>
@@ -65,19 +65,19 @@
                 <div class="hero-content">
                     <div>
                         <h1 class="hero-title">
-                            Haj va Umra <span class="gradient-text">Jamg'arma</span> Yo'lingiz
+                            Umra va Haj <span class="gradient-text">Yo'llanmalar</span> Platformasi
                         </h1>
                         <p class="hero-description">
-                            Har oy avtomatik jamg'arib, muqaddas ziyoratga tayyor bo'ling. Ishonchli, shaffof va qulay.
+                            Barcha tur agentliklar, yo'llanmalar, ellikboshilar va yuzboshilarni bir joydan tanlang. Online buyurtma bering, raqobatbardosh narxlarni taqqoslang.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#" class="btn btn-primary btn-lg" onclick="navigateTo('dashboard')">
-                                <i data-lucide="arrow-right" style="width:20px;height:20px"></i>
-                                Boshlash
+                            <a href="#" class="btn btn-primary btn-lg" onclick="navigateTo('packages')">
+                                <i data-lucide="search" style="width:20px;height:20px"></i>
+                                Yo'llanma qidirish
                             </a>
-                            <a href="#" class="btn btn-secondary btn-lg" onclick="navigateTo('travel')">
-                                <i data-lucide="plane" style="width:20px;height:20px"></i>
-                                Safar haqida
+                            <a href="#" class="btn btn-secondary btn-lg" onclick="navigateTo('agencies')">
+                                <i data-lucide="building-2" style="width:20px;height:20px"></i>
+                                Agentliklar
                             </a>
                         </div>
                     </div>
@@ -89,27 +89,27 @@
                         <div class="floating-cards">
                             <div class="floating-card card-1">
                                 <div class="card-icon">
-                                    <i data-lucide="trending-up"></i>
+                                    <i data-lucide="building-2"></i>
                                 </div>
-                                <h3>Jamg'arma</h3>
-                                <div class="card-amount">12M so'm</div>
-                                <p>jami to'plangan</p>
+                                <h3>Agentliklar</h3>
+                                <div class="card-amount">50+</div>
+                                <p>ishonchli kompaniya</p>
                             </div>
                             <div class="floating-card card-2">
                                 <div class="card-icon">
-                                    <i data-lucide="target"></i>
+                                    <i data-lucide="plane"></i>
                                 </div>
-                                <h3>Maqsad</h3>
-                                <div class="card-amount">70M so'm</div>
-                                <p>umumiy maqsad</p>
+                                <h3>Yo'llanmalar</h3>
+                                <div class="card-amount">200+</div>
+                                <p>turli paketlar</p>
                             </div>
                             <div class="floating-card card-3">
                                 <div class="card-icon">
-                                    <i data-lucide="calendar"></i>
+                                    <i data-lucide="users"></i>
                                 </div>
-                                <h3>Muddat</h3>
-                                <div class="card-amount">18 oy</div>
-                                <p>qolgan vaqt</p>
+                                <h3>Ellikboshilar</h3>
+                                <div class="card-amount">100+</div>
+                                <p>tajribali rahbarlar</p>
                             </div>
                         </div>
                     </div>
@@ -117,487 +117,1171 @@
             </div>
         </div>
 
+        <!-- Stats -->
         <div class="stats-section">
             <div class="container">
                 <div class="stats-grid">
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">
-                            <i data-lucide="users"></i>
-                        </div>
-                        <div class="stat-number" data-count="12500">0</div>
-                        <h3>Foydalanuvchilar</h3>
-                        <p>Platformamizda faol</p>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i data-lucide="users"></i></div>
+                        <div class="stat-number" data-count="15000">0</div>
+                        <div class="stat-label">Foydalanuvchilar</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">
-                            <i data-lucide="wallet"></i>
-                        </div>
-                        <div class="stat-number" data-count="850">0</div>
-                        <h3>Million so'm</h3>
-                        <p>Jami jamg'arilgan</p>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i data-lucide="building-2"></i></div>
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Tur agentliklar</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">
-                            <i data-lucide="check-circle"></i>
-                        </div>
-                        <div class="stat-number" data-count="3200">0</div>
-                        <h3>Muvaffaqiyatli safar</h3>
-                        <p>Amalga oshirilgan</p>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i data-lucide="check-circle"></i></div>
+                        <div class="stat-number" data-count="8500">0</div>
+                        <div class="stat-label">Muvaffaqiyatli buyurtmalar</div>
                     </div>
-                    <div class="stat-card reveal">
-                        <div class="stat-icon">
-                            <i data-lucide="star"></i>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i data-lucide="star"></i></div>
                         <div class="stat-number" data-count="4.9">0</div>
-                        <h3>Reyting</h3>
-                        <p>Foydalanuvchi bahosi</p>
+                        <div class="stat-label">O'rtacha reyting</div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Features -->
         <div class="features-section">
             <div class="container">
-                <div class="section-header reveal">
-                    <h2>Nima uchun <span class="gradient-text">HajSave</span>?</h2>
-                    <p>Zamonaviy, xavfsiz va islomiy qadriyatlarga mos jamg'arma tizimi</p>
-                </div>
+                <h2 class="section-title">Platformaning <span class="gradient-text">Afzalliklari</span></h2>
                 <div class="features-grid">
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">
-                            <i data-lucide="shield-check"></i>
-                        </div>
-                        <h3>Xavfsizlik</h3>
-                        <p>Ma'lumotlar shifrlanadi, pul xavfsiz saqlanadi</p>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="search"></i></div>
+                        <h3>Oson Qidiruv</h3>
+                        <p>Barcha yo'llanmalarni bir joydan qidiring va taqqoslang</p>
                     </div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">
-                            <i data-lucide="repeat"></i>
-                        </div>
-                        <h3>Avto-jamg'arma</h3>
-                        <p>Har oy avto-to'lov, qo'lda boshqarish shart emas</p>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                        <h3>Ishonchli Agentliklar</h3>
+                        <p>Faqat tasdiqlangan va litsenziyalangan kompaniyalar</p>
                     </div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">
-                            <i data-lucide="smartphone"></i>
-                        </div>
-                        <h3>Mobil ilova</h3>
-                        <p>Telefoningizdan barcha jarayonlarni kuzatib boring</p>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="clock"></i></div>
+                        <h3>Real-time Narxlar</h3>
+                        <p>Barcha narxlar doimiy yangilanib turadi</p>
                     </div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">
-                            <i data-lucide="headphones"></i>
-                        </div>
-                        <h3>24/7 Yordam</h3>
-                        <p>Har qanday savolga tezkor javob</p>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+                        <h3>Mobil Qulay</h3>
+                        <p>Telefon orqali istalgan joydan foydalaning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">Qanday <span class="gradient-text">Ishlaydi?</span></h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Yo'llanma Tanlang</h3>
+                        <p>O'zingizga mos yo'llanmani tanlang - Umra yoki Haj</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Agentlik Tanlang</h3>
+                        <p>Tur agentliklar jadvalidan narx va shartlarni taqqoslang</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Online Buyurtma</h3>
+                        <p>Hujjatlarni to'ldiring va online buyurtma bering</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Yo'llanma Oling</h3>
+                        <p>Elektron yoki qog'oz shaklda yo'llanmangizni oling</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DASHBOARD PAGE -->
-    <section id="dashboard" class="page">
+    <!-- AGENCIES PAGE -->
+    <section id="agencies" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="building-2"></i>
+                    Tur Agentliklar
+                </h1>
+                <p class="page-description">Ishonchli va litsenziyalangan tur agentliklarni tanlang</p>
+            </div>
+        </div>
+
         <div class="container">
-            <div class="page-header">
-                <h1>Dashboard</h1>
-                <p>Jamg'arma jarayoningizni kuzatib boring</p>
-            </div>
-
-            <div class="journey-section">
-                <div class="card">
-                    <h2 class="card-title">Sizning Haj Yo'lingiz</h2>
-                    <div class="journey-track">
-                        <div class="journey-path">
-                            <div class="journey-progress" id="journeyProgress"></div>
-                        </div>
-                        <div class="journey-icon" id="journeyIcon">
-                            <i data-lucide="plane" style="width:40px;height:40px;color:#ffd700"></i>
-                        </div>
-                        <div class="journey-goal">🕋</div>
-                    </div>
-                    <div class="journey-info">
-                        <span>Joriy holat</span>
-                        <span class="journey-percent">17% to'ldirilgan</span>
-                    </div>
+            <!-- Search & Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Agentlik nomi bo'yicha qidirish...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Barchasi</button>
+                    <button class="filter-btn">Toshkent</button>
+                    <button class="filter-btn">Samarqand</button>
+                    <button class="filter-btn">Buxoro</button>
                 </div>
             </div>
 
-            <div class="dashboard-grid">
-                <div class="card">
-                    <h3 class="card-subtitle">Jami balans</h3>
-                    <div class="balance-amount">12,000,000</div>
-                    <div class="balance-currency">UZS</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="balanceProgress"></div>
-                    </div>
-                    <div class="progress-info">
-                        <span>17% to'ldirilgan</span>
-                        <span>70,000,000 so'm</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-subtitle">Jamg'arma grafigi</h3>
-                    <div class="chart-container">
-                        <div class="chart-bar" style="height: 40%" data-month="Yan"></div>
-                        <div class="chart-bar" style="height: 55%" data-month="Fev"></div>
-                        <div class="chart-bar" style="height: 70%" data-month="Mar"></div>
-                        <div class="chart-bar" style="height: 65%" data-month="Apr"></div>
-                        <div class="chart-bar" style="height: 80%" data-month="May"></div>
-                        <div class="chart-bar" style="height: 90%" data-month="Iyn"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-subtitle">Avto-jamg'arma</h3>
-                <div class="auto-save-amount">
-                    <div class="amount-value">3,000,000</div>
-                    <p>so'm – har oyning 1-kuni</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-subtitle">So'nggi tranzaksiyalar</h3>
-                <div class="transactions-list" id="transactionsList">
-                    <!-- JS orqali to'ldiriladi -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FUNDS PAGE -->
-    <section id="funds" class="page">
-        <div class="container funds-container">
-            <div class="page-header">
-                <h1>To'lov qo'shish</h1>
-                <p>Hisobingizni istalgan usul bilan to'ldiring</p>
-            </div>
-
-            <div class="card">
-                <form id="paymentForm">
-                    <div class="form-group">
-                        <label for="paymentAmount">
-                            <i data-lucide="banknote" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
-                            To'lov miqdori
-                        </label>
-                        <input type="number" id="paymentAmount" class="form-control" placeholder="10,000,000" min="10000">
-                    </div>
-
-                    <div class="form-group">
-                        <label>To'lov usuli</label>
-                        <div class="payment-methods">
-                            <div class="payment-card active" data-method="payme">
-                                <div class="payment-icon">
-                                    <i data-lucide="credit-card"></i>
-                                </div>
-                                <span>Payme</span>
-                            </div>
-                            <div class="payment-card" data-method="click">
-                                <div class="payment-icon">
-                                    <i data-lucide="zap"></i>
-                                </div>
-                                <span>Click</span>
-                            </div>
-                            <div class="payment-card" data-method="uzum">
-                                <div class="payment-icon">
-                                    <i data-lucide="wallet"></i>
-                                </div>
-                                <span>Uzum Bank</span>
-                            </div>
-                            <div class="payment-card" data-method="card">
-                                <div class="payment-icon">
-                                    <i data-lucide="credit-card"></i>
-                                </div>
-                                <span>Karta</span>
-                            </div>
+            <!-- Agencies Grid -->
+            <div class="agencies-grid">
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge verified">
+                            <i data-lucide="check-circle"></i> Tasdiqlangan
                         </div>
                     </div>
-
-                    <div class="payment-summary">
-                        <div class="summary-row">
-                            <span>To'lov miqdori</span>
-                            <span id="summaryAmount">0 so'm</span>
-                        </div>
-                        <div class="summary-divider"></div>
-                        <div class="summary-row summary-total">
-                            <span>Jami</span>
-                            <span id="summaryTotal">0 so'm</span>
-                        </div>
+                    <h3 class="agency-name">Al-Safa Travel</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Toshkent</span>
+                        <span><i data-lucide="star"></i> 4.8</span>
+                        <span><i data-lucide="users"></i> 1200+ mijoz</span>
                     </div>
-
-                    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="processPayment()">
-                        <i data-lucide="check" style="width:20px;height:20px"></i>
-                        To'lovni amalga oshirish
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Haj</span>
+                        <span class="package-tag">VIP</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">12M - 85M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
                     </button>
-                </form>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge verified">
+                            <i data-lucide="check-circle"></i> Tasdiqlangan
+                        </div>
+                    </div>
+                    <h3 class="agency-name">Zamzam Tour</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Toshkent</span>
+                        <span><i data-lucide="star"></i> 4.9</span>
+                        <span><i data-lucide="users"></i> 2500+ mijoz</span>
+                    </div>
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Haj</span>
+                        <span class="package-tag">Ekonom</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">10M - 70M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
+                    </button>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge verified">
+                            <i data-lucide="check-circle"></i> Tasdiqlangan
+                        </div>
+                    </div>
+                    <h3 class="agency-name">Madinah Express</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Samarqand</span>
+                        <span><i data-lucide="star"></i> 4.7</span>
+                        <span><i data-lucide="users"></i> 800+ mijoz</span>
+                    </div>
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Haj</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">11M - 75M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
+                    </button>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge">
+                            <i data-lucide="clock"></i> Yangi
+                        </div>
+                    </div>
+                    <h3 class="agency-name">Hijra Travel</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Buxoro</span>
+                        <span><i data-lucide="star"></i> 4.6</span>
+                        <span><i data-lucide="users"></i> 300+ mijoz</span>
+                    </div>
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Ekonom</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">9M - 45M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
+                    </button>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge verified">
+                            <i data-lucide="check-circle"></i> Tasdiqlangan
+                        </div>
+                    </div>
+                    <h3 class="agency-name">Noor Tourism</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Toshkent</span>
+                        <span><i data-lucide="star"></i> 4.8</span>
+                        <span><i data-lucide="users"></i> 1800+ mijoz</span>
+                    </div>
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Haj</span>
+                        <span class="package-tag">VIP</span>
+                        <span class="package-tag">Oilaviy</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">13M - 95M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
+                    </button>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <div class="agency-logo">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="agency-badge verified">
+                            <i data-lucide="check-circle"></i> Tasdiqlangan
+                        </div>
+                    </div>
+                    <h3 class="agency-name">Barakah Tours</h3>
+                    <div class="agency-info">
+                        <span><i data-lucide="map-pin"></i> Farg'ona</span>
+                        <span><i data-lucide="star"></i> 4.7</span>
+                        <span><i data-lucide="users"></i> 950+ mijoz</span>
+                    </div>
+                    <div class="agency-packages">
+                        <span class="package-tag">Umra</span>
+                        <span class="package-tag">Haj</span>
+                    </div>
+                    <div class="agency-price">
+                        <span class="price-label">Narxlar:</span>
+                        <span class="price-value">10M - 68M so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('packages')">
+                        <i data-lucide="eye"></i> Yo'llanmalarni ko'rish
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- TRAVEL PAGE -->
-    <section id="travel" class="page">
+    <!-- PACKAGES PAGE -->
+    <section id="packages" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="plane"></i>
+                    Yo'llanmalar Jadvali
+                </h1>
+                <p class="page-description">Barcha tur agentliklar yo'llanmalarini taqqoslang va tanlang</p>
+            </div>
+        </div>
+
         <div class="container">
-            <div class="page-header">
-                <h1>Haj va Umra Safarlari</h1>
-                <p>Eng yaxshi paketlar va shartlar</p>
+            <!-- Filters -->
+            <div class="packages-filter">
+                <div class="filter-group">
+                    <label>Yo'llanma turi:</label>
+                    <select class="form-select">
+                        <option>Barchasi</option>
+                        <option>Umra</option>
+                        <option>Haj</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Narx oralig'i:</label>
+                    <select class="form-select">
+                        <option>Barchasi</option>
+                        <option>10M gacha</option>
+                        <option>10M - 30M</option>
+                        <option>30M - 50M</option>
+                        <option>50M dan yuqori</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Muddat:</label>
+                    <select class="form-select">
+                        <option>Barchasi</option>
+                        <option>7-10 kun</option>
+                        <option>10-15 kun</option>
+                        <option>15-21 kun</option>
+                        <option>21+ kun</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Mehmonxona:</label>
+                    <select class="form-select">
+                        <option>Barchasi</option>
+                        <option>3 yulduz</option>
+                        <option>4 yulduz</option>
+                        <option>5 yulduz</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="travel-grid">
-                <div class="travel-card card">
-                    <div class="travel-icon">🕋</div>
-                    <h3 class="travel-title">Haj 2026</h3>
-                    <p class="travel-subtitle">To'liq paket – 5 yulduzli mehmonxona</p>
-                    <div class="travel-details">
-                        <div class="detail-row">
-                            <span><i data-lucide="banknote" style="width:16px;height:16px"></i> Narxi</span>
-                            <span>70,000,000 so'm</span>
+            <!-- Packages Table -->
+            <div class="packages-table-wrapper">
+                <table class="packages-table">
+                    <thead>
+                        <tr>
+                            <th>Agentlik</th>
+                            <th>Paket nomi</th>
+                            <th>Turi</th>
+                            <th>Muddat</th>
+                            <th>Mehmonxona</th>
+                            <th>Narxi</th>
+                            <th>Qo'shimcha</th>
+                            <th>Amal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Al-Safa Travel</strong></td>
+                            <td>Umra Standart</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>10 kun</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td><strong>15,500,000</strong> so'm</td>
+                            <td>Ovqat, Transport</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zamzam Tour</strong></td>
+                            <td>Umra Ekonom</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>7 kun</td>
+                            <td>⭐⭐⭐</td>
+                            <td><strong>10,200,000</strong> so'm</td>
+                            <td>Transport</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Noor Tourism</strong></td>
+                            <td>Umra VIP</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>12 kun</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td><strong>28,000,000</strong> so'm</td>
+                            <td>Ovqat, Transport, Gid</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Madinah Express</strong></td>
+                            <td>Umra Ramazon</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>15 kun</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td><strong>22,500,000</strong> so'm</td>
+                            <td>Ovqat, Transport, Iftor</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Al-Safa Travel</strong></td>
+                            <td>Haj 2026</td>
+                            <td><span class="badge badge-haj">Haj</span></td>
+                            <td>40 kun</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td><strong>72,000,000</strong> so'm</td>
+                            <td>To'liq paket</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Zamzam Tour</strong></td>
+                            <td>Haj 2026 Standart</td>
+                            <td><span class="badge badge-haj">Haj</span></td>
+                            <td>35 kun</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td><strong>65,000,000</strong> so'm</td>
+                            <td>Ovqat, Transport, Gid</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hijra Travel</strong></td>
+                            <td>Umra Oilaviy</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>10 kun</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td><strong>14,000,000</strong> so'm</td>
+                            <td>Bolalar uchun chegirma</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Barakah Tours</strong></td>
+                            <td>Umra Express</td>
+                            <td><span class="badge badge-umra">Umra</span></td>
+                            <td>7 kun</td>
+                            <td>⭐⭐⭐</td>
+                            <td><strong>9,800,000</strong> so'm</td>
+                            <td>Transport</td>
+                            <td><button class="btn btn-sm btn-primary" onclick="navigateTo('booking')">Buyurtma</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Package Cards for Mobile -->
+            <div class="package-cards-mobile">
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="badge badge-umra">Umra</span>
+                        <span class="package-agency">Al-Safa Travel</span>
+                    </div>
+                    <h3 class="package-name">Umra Standart</h3>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <i data-lucide="calendar"></i>
+                            <span>10 kun</span>
                         </div>
-                        <div class="detail-row">
-                            <span><i data-lucide="clock" style="width:16px;height:16px"></i> Davomiyligi</span>
+                        <div class="detail-item">
+                            <i data-lucide="hotel"></i>
+                            <span>4 yulduz</span>
+                        </div>
+                    </div>
+                    <div class="package-price">15,500,000 so'm</div>
+                    <div class="package-includes">
+                        <span>Ovqat</span>
+                        <span>Transport</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('booking')">
+                        Buyurtma berish
+                    </button>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <span class="badge badge-haj">Haj</span>
+                        <span class="package-agency">Al-Safa Travel</span>
+                    </div>
+                    <h3 class="package-name">Haj 2026</h3>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <i data-lucide="calendar"></i>
                             <span>40 kun</span>
                         </div>
-                        <div class="detail-row">
-                            <span><i data-lucide="map-pin" style="width:16px;height:16px"></i> Chiqish</span>
-                            <span>Toshkent</span>
-                        </div>
-                    </div>
-                    <p class="progress-text">Sizda: 12M / 70M (17%)</p>
-                    <button class="btn btn-primary btn-block" onclick="navigateTo('funds')">
-                        <i data-lucide="plus" style="width:18px;height:18px"></i>
-                        To'ldirish
-                    </button>
-                </div>
-
-                <div class="travel-card card">
-                    <div class="travel-icon">🕌</div>
-                    <h3 class="travel-title">Umra Ramazon</h3>
-                    <p class="travel-subtitle">Ekonom paket – 3 yulduz</p>
-                    <div class="travel-details">
-                        <div class="detail-row">
-                            <span><i data-lucide="banknote" style="width:16px;height:16px"></i> Narxi</span>
-                            <span>25,000,000 so'm</span>
-                        </div>
-                        <div class="detail-row">
-                            <span><i data-lucide="clock" style="width:16px;height:16px"></i> Davomiyligi</span>
-                            <span>12 kun</span>
-                        </div>
-                        <div class="detail-row">
-                            <span><i data-lucide="map-pin" style="width:16px;height:16px"></i> Chiqish</span>
-                            <span>Toshkent</span>
-                        </div>
-                    </div>
-                    <p class="progress-text">Sizda: 12M / 25M (48%)</p>
-                    <button class="btn btn-primary btn-block" onclick="navigateTo('funds')">
-                        <i data-lucide="plus" style="width:18px;height:18px"></i>
-                        To'ldirish
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Bog'lanish usullari</h3>
-                <div class="contact-methods">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i data-lucide="phone"></i>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-value">+998 99 123 45 67</div>
-                            <div class="contact-time">9:00 – 21:00</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i data-lucide="send"></i>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-value">@HajSaveSupport</div>
-                            <div class="contact-time">Tezkor javob</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Paketga nimalar kiradi?</h3>
-                <div class="includes-grid">
-                    <div class="include-item">
-                        <div class="include-icon">
-                            <i data-lucide="plane"></i>
-                        </div>
-                        <h4>Aviachipta</h4>
-                        <p>Toshkent – Jidda – Toshkent</p>
-                    </div>
-                    <div class="include-item">
-                        <div class="include-icon">
+                        <div class="detail-item">
                             <i data-lucide="hotel"></i>
+                            <span>5 yulduz</span>
                         </div>
-                        <h4>Mehmonxona</h4>
-                        <p>5 yulduz, nonushta</p>
                     </div>
-                    <div class="include-item">
-                        <div class="include-icon">
-                            <i data-lucide="bus"></i>
-                        </div>
-                        <h4>Transport</h4>
-                        <p>Makka – Madina</p>
+                    <div class="package-price">72,000,000 so'm</div>
+                    <div class="package-includes">
+                        <span>To'liq paket</span>
                     </div>
-                    <div class="include-item">
-                        <div class="include-icon">
-                            <i data-lucide="user-check"></i>
+                    <button class="btn btn-primary btn-block" onclick="navigateTo('booking')">
+                        Buyurtma berish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUIDES PAGE (Ellikboshilar) -->
+    <section id="guides" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="users"></i>
+                    Ellikboshilar va Yuzboshilar
+                </h1>
+                <p class="page-description">Tajribali va ishonchli rahbarlarni tanlang</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Guide Types -->
+            <div class="guide-types">
+                <button class="guide-type-btn active">
+                    <i data-lucide="user"></i>
+                    Ellikboshilar
+                </button>
+                <button class="guide-type-btn">
+                    <i data-lucide="users"></i>
+                    Yuzboshilar
+                </button>
+            </div>
+
+            <!-- Guides Grid -->
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Abdulloh Karimov</h3>
+                    <div class="guide-title">Ellikboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>45 safar</span>
                         </div>
-                        <h4>Gid</h4>
-                        <p>O'zbek tilida</p>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Arab</span>
+                        <span>Rus</span>
+                    </div>
+                    <p class="guide-bio">15 yillik tajriba. 2000+ ziyoratchi bilan safar qilgan.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Muhammad Rashidov</h3>
+                    <div class="guide-title">Ellikboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>38 safar</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Arab</span>
+                    </div>
+                    <p class="guide-bio">12 yillik tajriba. Madinah Islom Universitetini tugatgan.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Shamsiddin Toshmatov</h3>
+                    <div class="guide-title">Yuzboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>62 safar</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Arab</span>
+                        <span>Ingliz</span>
+                    </div>
+                    <p class="guide-bio">20 yillik tajriba. 5000+ ziyoratchi bilan safar qilgan.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Fozil Nazarov</h3>
+                    <div class="guide-title">Ellikboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>28 safar</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Arab</span>
+                    </div>
+                    <p class="guide-bio">8 yillik tajriba. Qur'on hofizi.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Ismoil Yusupov</h3>
+                    <div class="guide-title">Ellikboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>35 safar</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Tojik</span>
+                        <span>Arab</span>
+                    </div>
+                    <p class="guide-bio">10 yillik tajriba. Tibbiy yordam ko'rsata oladi.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="guide-name">Komil Rahimov</h3>
+                    <div class="guide-title">Yuzboshi</div>
+                    <div class="guide-stats">
+                        <div class="stat">
+                            <i data-lucide="plane"></i>
+                            <span>55 safar</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="guide-languages">
+                        <span>O'zbek</span>
+                        <span>Arab</span>
+                        <span>Rus</span>
+                        <span>Ingliz</span>
+                    </div>
+                    <p class="guide-bio">18 yillik tajriba. Al-Azhar Universitetini tugatgan.</p>
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="phone"></i> Bog'lanish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITEMS PAGE (Kerakli buyumlar) -->
+    <section id="items" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="shopping-bag"></i>
+                    Kerakli Buyumlar
+                </h1>
+                <p class="page-description">Umra va Haj uchun zarur bo'lgan buyumlar ro'yxati</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Categories -->
+            <div class="items-categories">
+                <button class="category-btn active">
+                    <i data-lucide="list"></i> Barchasi
+                </button>
+                <button class="category-btn">
+                    <i data-lucide="shirt"></i> Kiyimlar
+                </button>
+                <button class="category-btn">
+                    <i data-lucide="pill"></i> Dori-darmonlar
+                </button>
+                <button class="category-btn">
+                    <i data-lucide="book-open"></i> Diniy
+                </button>
+                <button class="category-btn">
+                    <i data-lucide="briefcase"></i> Boshqa
+                </button>
+            </div>
+
+            <!-- Items Grid -->
+            <div class="items-grid">
+                <!-- Kiyimlar -->
+                <div class="item-card" data-category="clothes">
+                    <div class="item-icon">
+                        <i data-lucide="shirt"></i>
+                    </div>
+                    <h3>Ihrom (Erkaklar uchun)</h3>
+                    <p>2 dona oq mato - bel va yelka uchun</p>
+                    <div class="item-price">150,000 - 300,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <div class="item-card" data-category="clothes">
+                    <div class="item-icon">
+                        <i data-lucide="shirt"></i>
+                    </div>
+                    <h3>Oq kiyimlar (Ayollar)</h3>
+                    <p>Hijob va keng kiyimlar</p>
+                    <div class="item-price">200,000 - 500,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <div class="item-card" data-category="clothes">
+                    <div class="item-icon">
+                        <i data-lucide="footprints"></i>
+                    </div>
+                    <h3>Qulay poyabzal</h3>
+                    <p>Yurish uchun qulay shippak yoki sandal</p>
+                    <div class="item-price">100,000 - 250,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+
+                <!-- Dori-darmonlar -->
+                <div class="item-card" data-category="medicine">
+                    <div class="item-icon">
+                        <i data-lucide="pill"></i>
+                    </div>
+                    <h3>Asosiy dorilar</h3>
+                    <p>Paratsetamol, Ibuprofen, antiallergik</p>
+                    <div class="item-price">50,000 - 100,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <div class="item-card" data-category="medicine">
+                    <div class="item-icon">
+                        <i data-lucide="sun"></i>
+                    </div>
+                    <h3>Quyoshdan himoya</h3>
+                    <p>SPF 50+ krem va soyabon</p>
+                    <div class="item-price">80,000 - 150,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+
+                <div class="item-card" data-category="medicine">
+                    <div class="item-icon">
+                        <i data-lucide="droplets"></i>
+                    </div>
+                    <h3>Gigiena vositalari</h3>
+                    <p>Antibakterial sovun, sanitizer</p>
+                    <div class="item-price">30,000 - 70,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <!-- Diniy buyumlar -->
+                <div class="item-card" data-category="religious">
+                    <div class="item-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>Qur'oni Karim</h3>
+                    <p>Kichik o'lchamli, sayohat uchun</p>
+                    <div class="item-price">50,000 - 150,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <div class="item-card" data-category="religious">
+                    <div class="item-icon">
+                        <i data-lucide="book"></i>
+                    </div>
+                    <h3>Duo kitobi</h3>
+                    <p>Umra/Haj duolari to'plami</p>
+                    <div class="item-price">30,000 - 80,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+
+                <div class="item-card" data-category="religious">
+                    <div class="item-icon">
+                        <i data-lucide="compass"></i>
+                    </div>
+                    <h3>Tasbeh</h3>
+                    <p>Zikr uchun 33 yoki 99 donali</p>
+                    <div class="item-price">15,000 - 50,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+
+                <!-- Boshqa -->
+                <div class="item-card" data-category="other">
+                    <div class="item-icon">
+                        <i data-lucide="battery-charging"></i>
+                    </div>
+                    <h3>Power bank</h3>
+                    <p>10000mAh yoki undan yuqori</p>
+                    <div class="item-price">100,000 - 300,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+
+                <div class="item-card" data-category="other">
+                    <div class="item-icon">
+                        <i data-lucide="luggage"></i>
+                    </div>
+                    <h3>Kichik sumka</h3>
+                    <p>Hujjat va qimmatbaho narsalar uchun</p>
+                    <div class="item-price">80,000 - 200,000 so'm</div>
+                    <span class="item-tag essential">Majburiy</span>
+                </div>
+
+                <div class="item-card" data-category="other">
+                    <div class="item-icon">
+                        <i data-lucide="droplet"></i>
+                    </div>
+                    <h3>Suv idishi</h3>
+                    <p>Qayta ishlatiluvchi shisha</p>
+                    <div class="item-price">20,000 - 50,000 so'm</div>
+                    <span class="item-tag recommended">Tavsiya</span>
+                </div>
+            </div>
+
+            <!-- Checklist Download -->
+            <div class="checklist-section">
+                <div class="checklist-card">
+                    <i data-lucide="download"></i>
+                    <h3>To'liq ro'yxatni yuklab oling</h3>
+                    <p>PDF formatida chop etish uchun qulay</p>
+                    <button class="btn btn-primary">
+                        <i data-lucide="download"></i> PDF yuklab olish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING PAGE -->
+    <section id="booking" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="clipboard-list"></i>
+                    Online Buyurtma
+                </h1>
+                <p class="page-description">Yo'llanmangizni rasmiylashtiring</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="booking-wrapper">
+                <!-- Booking Form -->
+                <div class="booking-form-section">
+                    <form class="booking-form">
+                        <!-- Step 1: Personal Info -->
+                        <div class="form-section">
+                            <h3><i data-lucide="user"></i> Shaxsiy ma'lumotlar</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Ism *</label>
+                                    <input type="text" class="form-input" placeholder="Ismingiz" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Familiya *</label>
+                                    <input type="text" class="form-input" placeholder="Familiyangiz" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Otasining ismi *</label>
+                                    <input type="text" class="form-input" placeholder="Otangizning ismi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tug'ilgan sana *</label>
+                                    <input type="date" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Passport raqami *</label>
+                                    <input type="text" class="form-input" placeholder="AA1234567" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefon raqami *</label>
+                                    <input type="tel" class="form-input" placeholder="+998 90 123 45 67" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Package Selection -->
+                        <div class="form-section">
+                            <h3><i data-lucide="plane"></i> Yo'llanma tanlash</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Yo'llanma turi *</label>
+                                    <select class="form-select" required>
+                                        <option value="">Tanlang...</option>
+                                        <option value="umra">Umra</option>
+                                        <option value="haj">Haj</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Agentlik *</label>
+                                    <select class="form-select" required>
+                                        <option value="">Tanlang...</option>
+                                        <option value="alsafa">Al-Safa Travel</option>
+                                        <option value="zamzam">Zamzam Tour</option>
+                                        <option value="noor">Noor Tourism</option>
+                                        <option value="madinah">Madinah Express</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Paket *</label>
+                                    <select class="form-select" required>
+                                        <option value="">Avval agentlik tanlang</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Jo'nash sanasi *</label>
+                                    <input type="date" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Additional Options -->
+                        <div class="form-section">
+                            <h3><i data-lucide="settings"></i> Qo'shimcha tanlovlar</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Ellikboshi</label>
+                                    <select class="form-select">
+                                        <option value="">Agentlik tayinlaydi</option>
+                                        <option value="abdulloh">Abdulloh Karimov</option>
+                                        <option value="muhammad">Muhammad Rashidov</option>
+                                        <option value="shamsiddin">Shamsiddin Toshmatov</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Yo'llanma shakli *</label>
+                                    <select class="form-select" required>
+                                        <option value="electronic">Elektron (Email orqali)</option>
+                                        <option value="paper">Qog'oz (Ofisdan olish)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" required>
+                                    <span>Shartlar va qoidalar bilan tanishdim va roziman</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i data-lucide="send"></i> Buyurtmani yuborish
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="booking-summary">
+                    <h3>Buyurtma xulosasi</h3>
+                    <div class="summary-item">
+                        <span>Yo'llanma turi:</span>
+                        <strong>Tanlanmagan</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Agentlik:</span>
+                        <strong>Tanlanmagan</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Paket:</span>
+                        <strong>Tanlanmagan</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Muddat:</span>
+                        <strong>-</strong>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-total">
+                        <span>Jami narx:</span>
+                        <strong>0 so'm</strong>
+                    </div>
+                    <div class="summary-note">
+                        <i data-lucide="info"></i>
+                        <p>Narx yo'llanma tanlanganidan keyin ko'rsatiladi</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SETTINGS PAGE -->
-    <section id="settings" class="page">
-        <div class="container settings-container">
-            <div class="page-header">
-                <h1>Sozlamalar</h1>
-                <p>Profil va xavfsizlikni boshqaring</p>
+    <!-- ACCOUNT PAGE -->
+    <section id="account" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    <i data-lucide="user-circle"></i>
+                    Hisob raqam
+                </h1>
+                <p class="page-description">Shaxsiy kabinetingiz</p>
             </div>
+        </div>
 
-            <div class="card">
-                <div class="profile-avatar">
-                    <div class="avatar-circle">A</div>
-                    <div>
-                        <h3>Ahmad Karimov</h3>
-                        <p>ahmad@example.com</p>
+        <div class="container">
+            <div class="account-grid">
+                <!-- Profile Card -->
+                <div class="account-card profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3>Abduraxmon Toshmatov</h3>
+                        <p>ID: #12345</p>
                     </div>
-                </div>
-
-                <form class="settings-form">
-                    <div class="form-group">
-                        <label>
-                            <i data-lucide="user" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
-                            Ism
-                        </label>
-                        <input type="text" class="form-control" value="Ahmad Karimov">
+                    <div class="profile-info">
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <span>abduraxmon@email.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <span>+998 90 123 45 67</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Toshkent, O'zbekiston</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            <i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
-                            Email
-                        </label>
-                        <input type="email" class="form-control" value="ahmad@example.com">
-                    </div>
-                    <button class="btn btn-primary">
-                        <i data-lucide="save" style="width:18px;height:18px"></i>
-                        Saqlash
+                    <button class="btn btn-secondary btn-block">
+                        <i data-lucide="edit"></i> Tahrirlash
                     </button>
-                </form>
-            </div>
+                </div>
 
-            <div class="card">
-                <h3 class="card-title">Xavfsizlik</h3>
-                <div class="security-feature">
-                    <div>
-                        <h4>
-                            <i data-lucide="shield" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
-                            Ikki bosqichli autentifikatsiya
-                        </h4>
-                        <p>Hisobingizni qo'shimcha himoya qiling</p>
+                <!-- My Bookings -->
+                <div class="account-card">
+                    <h3><i data-lucide="clipboard-list"></i> Mening buyurtmalarim</h3>
+                    <div class="bookings-list">
+                        <div class="booking-item">
+                            <div class="booking-status active">
+                                <i data-lucide="loader"></i>
+                            </div>
+                            <div class="booking-info">
+                                <h4>Umra Standart</h4>
+                                <p>Al-Safa Travel • 15 Yanvar 2026</p>
+                            </div>
+                            <div class="booking-price">15,500,000 so'm</div>
+                        </div>
+                        <div class="booking-item">
+                            <div class="booking-status completed">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <div class="booking-info">
+                                <h4>Umra Ramazon 2025</h4>
+                                <p>Zamzam Tour • 10 Mart 2025</p>
+                            </div>
+                            <div class="booking-price">12,000,000 so'm</div>
+                        </div>
                     </div>
-                    <label class="toggle">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                    </label>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="account-card">
+                    <h3><i data-lucide="zap"></i> Tezkor amallar</h3>
+                    <div class="quick-actions">
+                        <button class="action-btn" onclick="navigateTo('packages')">
+                            <i data-lucide="plus"></i>
+                            Yangi buyurtma
+                        </button>
+                        <button class="action-btn">
+                            <i data-lucide="download"></i>
+                            Yo'llanmani yuklab olish
+                        </button>
+                        <button class="action-btn">
+                            <i data-lucide="headphones"></i>
+                            Yordam markazi
+                        </button>
+                        <button class="action-btn">
+                            <i data-lucide="settings"></i>
+                            Sozlamalar
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <h3 class="card-title">Bildirishnomalar</h3>
-                <div class="notification-item">
-                    <div>
-                        <h4>
-                            <i data-lucide="bell" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
-                            To'lov bildirishnomasi
-                        </h4>
-                        <p>Har bir to'lov haqida xabar</p>
-                    </div>
-                    <label class="toggle">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-                <div class="notification-item">
-                    <div>
-                        <h4>
-                            <i data-lucide="target" style="width:18px;height:18px;display:inline-block;vertical-align:middle"></i>
-                            Maqsad yaqinlashganda
-                        </h4>
-                        <p>80% ga yetganda eslatma</p>
-                    </div>
-                    <label class="toggle">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-            </div>
-
-            <button class="btn btn-danger" onclick="logout()">
-                <i data-lucide="log-out" style="width:18px;height:18px"></i>
-                Chiqish
-            </button>
         </div>
     </section>
 
     <!-- LOGIN PAGE -->
     <section id="login" class="page">
-        <div class="login-container">
-            <div class="login-card card">
-                <div class="login-header">
-                    <div class="kaaba-icon large">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <div class="auth-logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
                     </div>
-                    <h1>HajSave</h1>
-                    <p>Xush kelibsiz! Hisobingizga kiring</p>
+                    <h2>Umra&Haj</h2>
+                    <p>Hisobingizga kiring</p>
                 </div>
 
-                <form id="loginForm" class="login-form">
+                <!-- Login Form -->
+                <form class="auth-form" id="loginForm">
                     <div class="form-group">
-                        <label>
-                            <i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
-                            Email yoki telefon
-                        </label>
-                        <input type="text" class="form-control" placeholder="example@mail.com" required>
+                        <label>Email yoki telefon</label>
+                        <div class="input-icon">
+                            <i data-lucide="mail"></i>
+                            <input type="text" class="form-input" placeholder="email@example.com" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label>
-                            <i data-lucide="lock" style="width:16px;height:16px;display:inline-block;vertical-align:middle"></i>
-                            Parol
-                        </label>
-                        <input type="password" class="form-control" placeholder="••••••••" required>
+                        <label>Parol</label>
+                        <div class="input-icon">
+                            <i data-lucide="lock"></i>
+                            <input type="password" class="form-input" placeholder="••••••••" required>
+                        </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-options">
                         <label class="checkbox-label">
                             <input type="checkbox">
                             <span>Eslab qolish</span>
                         </label>
                         <a href="#" class="forgot-link">Parolni unutdingizmi?</a>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">
-                        <i data-lucide="log-in" style="width:20px;height:20px"></i>
-                        Kirish
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i data-lucide="log-in"></i> Kirish
                     </button>
                 </form>
 
-                <div class="divider">YOKI</div>
+                <div class="auth-divider">
+                    <span>yoki</span>
+                </div>
 
-                <button class="btn btn-secondary btn-block" onclick="showRegister(event)">
-                    <i data-lucide="user-plus" style="width:18px;height:18px"></i>
-                    Yangi hisob yaratish
-                </button>
+                <div class="social-auth">
+                    <button class="social-btn google">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/></svg>
+                        Google
+                    </button>
+                </div>
 
-                <p class="register-link">
-                    Hisobingiz yo'qmi? <a href="#">Ro'yxatdan o'ting</a>
+                <p class="auth-footer">
+                    Hisobingiz yo'qmi? 
+                    <a href="#" onclick="showRegister()">Ro'yxatdan o'tish</a>
                 </p>
             </div>
         </div>
@@ -612,43 +1296,41 @@
                         <div class="kaaba-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5 10 9 10 9s10-4 10-9V7L12 2z"/><path d="M12 22V8"/></svg>
                         </div>
-                        <span>HajSave</span>
+                        <span>Umra&Haj</span>
                     </div>
-                    <p>Muqaddas joylarga ishonchli yo'lingiz</p>
+                    <p>Online yo'llanma platformasi</p>
+                    <p class="footer-version">v1.0 • © 2025</p>
                 </div>
                 <div class="footer-col">
                     <h4>Platforma</h4>
-                    <a href="#">Biz haqimizda</a>
-                    <a href="#">Xizmatlar</a>
-                    <a href="#">Narxlar</a>
-                    <a href="#">FAQ</a>
+                    <a href="#" onclick="navigateTo('agencies')">Tur agentliklar</a>
+                    <a href="#" onclick="navigateTo('packages')">Yo'llanmalar</a>
+                    <a href="#" onclick="navigateTo('guides')">Ellikboshilar</a>
+                    <a href="#" onclick="navigateTo('items')">Kerakli buyumlar</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Qo'llab-quvvatlash</h4>
-                    <a href="#">Yordam markazi</a>
+                    <h4>Yordam</h4>
+                    <a href="#">FAQ</a>
                     <a href="#">Bog'lanish</a>
                     <a href="#">Maxfiylik siyosati</a>
                     <a href="#">Foydalanish shartlari</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Ijtimoiy tarmoqlar</h4>
-                    <a href="#">Telegram</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">YouTube</a>
+                    <h4>Bog'lanish</h4>
+                    <a href="tel:+998901234567">+998 90 123 45 67</a>
+                    <a href="mailto:info@umrahaj.uz">info@umrahaj.uz</a>
+                    <a href="#">Telegram: @UmraHajUz</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 HajSave. Barcha huquqlar himoyalangan.</p>
+                <p>© 2025 Umra&Haj. Barcha huquqlar himoyalangan.</p>
+                <p>Buyurtmachi: Abduraxmonov Javoxir | Ishlab chiqaruvchi: Team</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/auth.js"></script>
-    <script src="js/dashboard.js"></script>
-    <script src="js/funds.js"></script>
     <script>
         // Lucide ikonlarni ishga tushirish
         if (typeof lucide !== 'undefined') {
@@ -669,6 +1351,11 @@
             }
         });
         observer.observe(document.body, { childList: true, subtree: true });
+
+        // Register form ko'rsatish
+        function showRegister() {
+            alert('Ro\'yxatdan o\'tish sahifasi tez orada qo\'shiladi!');
+        }
     </script>
 </body>
 </html>

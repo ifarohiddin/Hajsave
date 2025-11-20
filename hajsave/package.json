@@ -1,26 +1,29 @@
 {
-  "name": "hajsave",
-  "version": "2.0.0",
-  "description": "HajSave - Haj va Umra uchun ishonchli jamg'arma platformasi",
+  "name": "umra-haj",
+  "version": "1.0.0",
+  "description": "Umra&Haj - Online yo'llanma platformasi. Barcha tur agentliklar, yo'llanmalar va ellikboshilarni tanlang.",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 8000"
   },
   "keywords": [
+    "umra",
+    "haj",
     "hajj",
-    "umrah",
-    "savings",
-    "islamic",
-    "travel",
-    "mecca",
-    "medina"
+    "yollanma",
+    "tur-agentlik",
+    "ellikboshi",
+    "ziyorat",
+    "makka",
+    "madina",
+    "uzbekistan"
   ],
-  "author": "MiniMax Agent",
+  "author": "Team (Buyurtmachi: Abduraxmonov Javoxir)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/hajsave.git"
+    "url": "https://github.com/yourusername/umra-haj.git"
   },
   "dependencies": {},
   "devDependencies": {}

@@ -1,358 +1,238 @@
-# 🕌 HajSave - Haj va Umra Jamg'arma Platformasi
+# 🕌 Umra&Haj - Online Yo'llanma Platformasi
 
-Zamonaviy, professional va islomiy qadriyatlarga mos jamg'arma platformasi.
+**Versiya:** 1.0  
+**Buyurtmachi:** Abduraxmonov Javoxir  
+**Ishlab chiqaruvchi:** Team  
+**Sana:** 01.11.2025
 
-## ✨ Yangi Xususiyatlar (v2.0)
+---
 
-### 🎨 **Professional Dizayn**
-- ✅ **Lucide Icons** - Zamonaviy SVG ikon kutubxonasi
-- ✅ **Professional Rasmlar** - Yuqori sifatli Kaaba va islomiy rasmlar
-- ✅ **Islomiy Naqshlar** - Animatsiyalangan fon naqshlari
-- ✅ **Responsive Design** - Barcha qurilmalarda mukammal ko'rinish
+## 📋 Loyiha Haqida
 
-### 🖼️ **Qo'shilgan Rasmlar**
-- `assets/images/kaaba.jpg` - Professional Kaaba rasmi (hero qismida)
-- `assets/images/pattern.jpg` - Islomiy geometrik naqsh (animatsiyalangan fon)
-- `assets/images/masjid.jpg` - Masjid an-Nabawi rasmi
-- `assets/images/savings.jpg` - Jamg'arma kontseptsiya rasmi
-- `assets/images/pilgrim.jpg` - Haj ziyoratchi rasmi
+Ushbu loyiha foydalanuvchilarga barcha umra va haj uchun yo'llanmalar, mehmonxonalar, ellikboshi va yuzboshilarni o'zlarining telefonlari orqali belgilash imkonini beradi.
 
-### 🎯 **SVG Ikonlar**
-Barcha ikonlar Lucide kutubxonasidan professional SVG formatida:
-- ✅ Navigatsiya ikonlari (log-in, menu, etc.)
-- 📊 Statistika ikonlari (users, wallet, check-circle, star)
-- 💳 To'lov tizimlari ikonlari (credit-card, zap, wallet)
-- ✈️ Safar ikonlari (plane, hotel, bus, user-check)
-- ⚙️ Sozlamalar ikonlari (shield, bell, target, save)
+### Maqsad
+- Foydalanuvchilar uchun qulaylik yaratish
+- Tur agentliklar uchun raqobatni kuchaytirish
+- Shaffof narxlar va onlayn buyurtma imkoniyati
 
-## 📁 Fayl Strukturasi
+---
 
-```
-hajsave/
-├── assets/
-│   └── images/           # ⭐ YANGI: Professional rasmlar
-│       ├── kaaba.jpg     # 563 KB - Kaaba rasmi
-│       ├── pattern.jpg   # 355 KB - Islomiy naqsh
-│       ├── masjid.jpg    # 46 KB - Masjid rasmi
-│       ├── savings.jpg   # 218 KB - Jamg'arma rasmi
-│       └── pilgrim.jpg   # 137 KB - Ziyoratchi rasmi
-├── css/
-│   ├── style.css         # ⭐ YANGILANGAN: Yangi stillar
-│   └── responsive.css    # Responsive dizayn
-├── js/
-│   ├── main.js           # Asosiy JavaScript
-│   ├── auth.js           # Autentifikatsiya
-│   ├── dashboard.js      # Dashboard funksiyalari
-│   └── funds.js          # To'lov funksiyalari
-├── api/
-│   └── config.js         # API sozlamalari
-└── index.html            # ⭐ YANGILANGAN: Lucide Icons + SVG
-```
+## ✨ Asosiy Xususiyatlar
 
-## 🚀 Ishga Tushirish
+### Foydalanuvchi uchun
+- ✅ Ro'yxatdan o'tish va tizimga kirish
+- ✅ Barcha yo'llanmalarni ko'rish va taqqoslash
+- ✅ Online buyurtma berish
+- ✅ Ellikboshi/Yuzboshi tanlash
+- ✅ Elektron yoki qog'oz yo'llanma
+- ✅ Shaxsiy hisob raqam
 
-### 🌐 **Netlify Deploy** (Tavsiya etiladi)
+### Platforma
+- ✅ 50+ ishonchli tur agentlik
+- ✅ 200+ turli yo'llanma paketi
+- ✅ 100+ tajribali ellikboshi
+- ✅ Real-time narxlar
+- ✅ 24/7 ishlash
 
-#### 1-usul: Netlify veb-interfeysi orqali
+---
 
-1. **Netlify'ga kirish:**
-   - [Netlify.com](https://netlify.com) ga kiring
-   - "Sign up" yoki "Log in" tugmasini bosing
+## 📁 Sahifalar
 
-2. **Deploy qilish:**
-   - "Add new site" > "Deploy manually" ni tanlang
-   - `hajsave` papkasini drag & drop qiling
-   - Yoki "Browse to upload" orqali papkani tanlang
+### 1. 🏠 Bosh sahifa
+- Hero section - platformaning tavsifi
+- Statistika - foydalanuvchilar, agentliklar, buyurtmalar
+- Xususiyatlar - platformaning afzalliklari
+- Qanday ishlaydi - 4 qadamli yo'riqnoma
 
-3. **Tayyor!**
-   - 30-60 soniyada sayt tayyor bo'ladi
-   - URL: `https://your-site-name.netlify.app`
+### 2. 🏢 Tur Agentliklar
+- Barcha agentliklar ro'yxati
+- Qidiruv va filtrlash
+- Agentlik kartasi: reyting, mijozlar soni, narxlar
+- Yo'llanmalarni ko'rish tugmasi
 
-#### 2-usul: Netlify CLI orqali
+### 3. ✈️ Yo'llanmalar Jadvali
+- Barcha paketlar jadvali
+- Filtrlash: turi, narx, muddat, mehmonxona
+- Desktop uchun jadval, mobil uchun kartalar
+- Online buyurtma tugmasi
 
-```bash
-# Netlify CLI o'rnatish
-npm install -g netlify-cli
+### 4. 👥 Ellikboshilar va Yuzboshilar
+- Tajribali rahbarlar ro'yxati
+- Safar soni, reyting, tillar
+- Qisqacha biografiya
+- Bog'lanish tugmasi
 
-# Netlify'ga login qilish
-netlify login
+### 5. 🎒 Kerakli Buyumlar
+- Kategoriyalar: Kiyimlar, Dori, Diniy, Boshqa
+- Majburiy va tavsiya etiladigan buyumlar
+- Narxlar ko'rsatkichi
+- PDF yuklab olish
 
-# Saytni deploy qilish
-cd hajsave
-netlify deploy
+### 6. 📋 Online Buyurtma
+- Shaxsiy ma'lumotlar formasi
+- Yo'llanma tanlash
+- Ellikboshi tanlash
+- Yo'llanma shakli (elektron/qog'oz)
+- Buyurtma xulosasi
 
-# Production deploy
-netlify deploy --prod
-```
+### 7. 👤 Hisob Raqam
+- Profil ma'lumotlari
+- Buyurtmalar tarixi
+- Tezkor amallar
 
-#### 3-usul: Git orqali (Auto Deploy)
+### 8. 🔐 Kirish/Ro'yxatdan o'tish
+- Email/telefon bilan kirish
+- Google orqali kirish
+- Yangi hisob yaratish
 
-1. **GitHub'ga yuklash:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: HajSave v2.0"
-   git remote add origin https://github.com/username/hajsave.git
-   git push -u origin main
-   ```
-
-2. **Netlify'da bog'lash:**
-   - Netlify'da "Import from Git" ni tanlang
-   - GitHub repository'ni tanlang
-   - Build settings:
-     - Build command: `echo 'No build required'`
-     - Publish directory: `.`
-   - "Deploy site" tugmasini bosing
-
-3. **Auto Deploy:**
-   - Har safar GitHub'ga push qilganingizda avtomatik deploy bo'ladi
-
-### 💻 **Local Development**
-
-1. **Oddiy yo'l (Brauzerda ochish):**
-   ```bash
-   # Faylni brauzerda oching
-   open index.html  # MacOS
-   start index.html # Windows
-   ```
-
-2. **Local server orqali (Tavsiya etiladi):**
-   ```bash
-   # Python server
-   cd hajsave
-   python -m http.server 8000
-   
-   # Yoki Node.js server
-   npx serve
-   
-   # Yoki live-server
-   live-server .
-   ```
-
-3. **Brauzerda ochish:**
-   - Google Chrome yoki Firefox da `index.html` ni oching
-   - Yoki http://localhost:8000 ga kiring (server ishlatilsa)
-
-## 🎨 Dizayn Elementlari
-
-### Rang Palitras
-- **Primary:** `#00d4aa` - Yashil-ko'k (jamg'arma)
-- **Secondary:** `#0084ff` - Ko'k (ishonch)
-- **Gold:** `#ffd700` - Oltin (islomiy aksentlar)
-- **Dark:** `#0a0e27` - To'q qora (fon)
-- **Success:** `#10b981` - Yashil
-- **Danger:** `#ef4444` - Qizil
-
-### Animatsiyalar
-- ✨ Suzuvchi kartalar (Floating cards) - 6s infinite
-- 🌀 Aylanuvchi fon gradient - 30s rotation
-- 💫 Islomiy naqsh animatsiyasi - 60s movement
-- 📈 Progress bar animatsiyalari - shimmer effect
-- 🎯 Pulse glow - Kaaba rasmi atrofida
-
-### Responsive Breakpoints
-- **Large Desktop:** > 1200px
-- **Desktop:** 992px - 1200px
-- **Tablet:** 768px - 992px
-- **Mobile:** < 768px
-- **Small Mobile:** < 576px
-
-## 🌟 Asosiy Sahifalar
-
-1. **🏠 Bosh sahifa** (#home)
-   - Hero qismi + Kaaba rasmi
-   - Statistika (12,500 foydalanuvchilar, 850M to'plangan)
-   - Xususiyatlar (Xavfsizlik, Avto-jamg'arma, Mobil, 24/7)
-
-2. **📊 Dashboard** (#dashboard)
-   - Haj yo'li tracker (animatsiyalangan)
-   - Jami balans: 12,000,000 UZS
-   - Jamg'arma grafigi (6 oylik)
-   - Avto-jamg'arma: 3,000,000 so'm/oy
-   - So'nggi tranzaksiyalar
-
-3. **💳 To'ldirish** (#funds)
-   - To'lov miqdori input
-   - To'lov usullari: Payme, Click, Uzum Bank, Karta
-   - To'lov summary
-
-4. **✈️ Safar** (#travel)
-   - Haj 2026: 70M so'm, 40 kun, 5⭐
-   - Umra Ramazon: 25M so'm, 12 kun, 3⭐
-   - Bog'lanish: +998 99 123 45 67, @HajSaveSupport
-   - Paket tarkibi: Aviachipta, Mehmonxona, Transport, Gid
-
-5. **⚙️ Sozlamalar** (#settings)
-   - Profil (Ism, Email)
-   - Ikki bosqichli autentifikatsiya
-   - Bildirishnomalar sozlamalari
-
-6. **🔐 Login** (#login)
-   - Email/telefon kirish
-   - Parol
-   - "Eslab qolish" checkbox
-   - Yangi hisob yaratish
+---
 
 ## 🛠️ Texnologiyalar
 
+### Frontend (Hozirgi)
 - **HTML5** - Semantik markup
-- **CSS3** - Modern stillar, gradientlar, animatsiyalar
-- **JavaScript** - Vanilla JS (dependencies yo'q)
-- **[Lucide Icons](https://lucide.dev)** - SVG ikon kutubxonasi (CDN)
-- **Google Fonts** - Inter font oilasi
+- **CSS3** - Zamonaviy stillar, animatsiyalar
+- **JavaScript** - Vanilla JS
+- **Lucide Icons** - SVG ikon kutubxonasi
+- **Google Fonts** - Inter font
 
-## 📱 Xususiyatlar
+### Backend (Kelajakda)
+- **Python** - Django Framework
+- **SQLite** → PostgreSQL
+- **Nginx** - Server
+- **JWT** - Autentifikatsiya
 
-### ✅ Yaxshilangan Qismlar
-- [x] Professional SVG ikonlar (Lucide)
-- [x] Yuqori sifatli rasmlar (Kaaba, Masjid, va boshqalar)
-- [x] Islomiy naqshli animatsiyalangan fon
-- [x] Hero qismida Kaaba rasmi + overlay
-- [x] Barcha ikonlar SVG formatida
-- [x] Mobil responsive (100%)
-- [x] Dark mode dizayn
-- [x] Smooth animatsiyalar
+---
 
-## 🎯 Kelajak Rejalar
+## 🚀 Ishga Tushirish
 
-- [ ] Backend integratsiyasi (Node.js/Python/FastAPI)
-- [ ] Real to'lov API lari (Payme, Click, Uzum)
-- [ ] Database (PostgreSQL/MongoDB)
-- [ ] User authentication (JWT)
-- [ ] Mobile ilova (React Native / Flutter)
+### Local Development
+
+```bash
+# Python server
+cd hajsave
+python -m http.server 8000
+
+# Brauzerda ochish
+http://localhost:8000
+```
+
+### Netlify Deploy
+
+1. [netlify.com](https://netlify.com) ga kiring
+2. "Add new site" → "Deploy manually"
+3. `hajsave` papkasini drag & drop qiling
+4. Tayyor!
+
+---
+
+## 📊 Fayl Strukturasi
+
+```
+hajsave/
+├── index.html              # Asosiy sahifa (1361 qator)
+├── css/
+│   ├── style.css           # Asosiy stillar
+│   └── responsive.css      # Responsive dizayn
+├── js/
+│   └── main.js             # JavaScript
+├── assets/
+│   └── images/             # Rasmlar
+│       ├── kaaba.jpg
+│       ├── pattern.jpg
+│       └── ...
+├── netlify.toml            # Netlify config
+├── _redirects              # SPA routing
+├── package.json            # Metadata
+└── README.md               # Hujjat
+```
+
+---
+
+## 🎨 Dizayn Tizimi
+
+### Ranglar
+- **Primary:** `#00d4aa` - Yashil (asosiy)
+- **Secondary:** `#0084ff` - Ko'k
+- **Gold:** `#ffd700` - Oltin
+- **Dark:** `#0a0e27` - Fon
+- **Success:** `#10b981` - Muvaffaqiyat
+- **Danger:** `#ef4444` - Xato
+
+### Komponentlar
+- Agency Card - Agentlik kartasi
+- Package Table - Yo'llanmalar jadvali
+- Guide Card - Ellikboshi kartasi
+- Item Card - Buyum kartasi
+- Booking Form - Buyurtma formasi
+
+---
+
+## 📅 Ish Reja (Timeline)
+
+| Bosqich | Ish tavsifi | Muddat |
+|---------|-------------|--------|
+| 1-hafta | Loyiha tahlili va dizayn | 24.10.2025 – 30.12.2025 |
+| 2-hafta | Backend logikasi (Django) | 03.01.2026 – 07.03.2026 |
+| 3-hafta | Frontend integratsiya | 08.03.2026 – 15.04.2026 |
+| 4-hafta | Sinov va yakunlash | 16.05.2026 – 30.05.2026 |
+
+---
+
+## 🎯 Yakuniy Natija
+
+- ✅ To'liq ishlaydigan Umra&Haj online tizimi
+- ✅ Admin paneli orqali boshqarish
+- ✅ Texnik hujjatlar va foydalanuvchi qo'llanmasi
+- ✅ Tizim sinovdan o'tgan va ishga tushishga tayyor
+
+---
+
+## 📱 Responsive Dizayn
+
+- **Desktop:** > 1024px - To'liq funksionallik
+- **Tablet:** 768px - 1024px - Moslashtirilgan
+- **Mobile:** < 768px - Mobil kartalar
+
+---
+
+## 🔧 Kelajak Rejalar
+
+### Backend Integratsiya
+- [ ] Django REST API
+- [ ] PostgreSQL database
+- [ ] JWT autentifikatsiya
 - [ ] Admin panel
-- [ ] Ko'p tillilik (O'zbek, Rus, Ingliz, Arab)
+
+### To'lov Tizimlari
+- [ ] Payme integratsiya
+- [ ] Click integratsiya
+- [ ] Uzum Bank
+
+### Qo'shimcha
+- [ ] Mobile ilova (React Native)
+- [ ] Ko'p tillilik (O'zbek, Rus, Arab)
 - [ ] Email/SMS bildirishnomalar
-- [ ] Real-time currency conversion
-- [ ] PDF chek/hisobot generatsiya
+- [ ] PDF yo'llanma generatsiya
 
-## 📊 Versiya Tarix
+---
 
-### v2.0.0 (2025-11-19) - **Professional Upgrade** 🎉
-- ✅ Lucide Icons kutubxonasi qo'shildi
-- ✅ 5 ta professional rasm qo'shildi (1.3 MB)
-- ✅ Islomiy naqsh animatsiyasi
-- ✅ Kaaba rasmi hero qismida
-- ✅ Barcha matnli ikonlar SVG ga almashtirildi
-- ✅ CSS yaxshilangan (yangi stillar + animatsiyalar)
-- ✅ btn-danger tugmasi qo'shildi
-- ✅ README to'liq yangilandi
+## 📞 Bog'lanish
 
-### v1.0.0 (2024-10-31) - Initial Release
-- Asosiy dizayn va struktura
-- 6 ta sahifa
-- Responsive layout
-- Mock to'lov tizimlari
+- **Telefon:** +998 90 123 45 67
+- **Email:** info@umrahaj.uz
+- **Telegram:** @UmraHajUz
+
+---
 
 ## 📄 Litsenziya
 
-© 2025 HajSave. Barcha huquqlar himoyalangan.
+© 2025 Umra&Haj. Barcha huquqlar himoyalangan.
 
 ---
 
-## 🔧 Netlify Sozlamalari
-
-Loyihada quyidagi Netlify fayllari mavjud:
-
-### 📁 `netlify.toml`
-- Build settings (static site)
-- Redirect rules (SPA-like navigation)
-- Security headers (XSS, CSRF protection)
-- Cache-control headers (performance optimization)
-- Environment variables
-
-### 📁 `_redirects`
-- Client-side routing uchun redirects
-- 404 sahifalarni index.html ga yo'naltirish
-
-### 📁 `.gitignore`
-- Node modules
-- Environment files
-- Temporary files
-- IDE settings
-
-## 🐛 Troubleshooting
-
-### Ikonlar ko'rinmayapti?
-**Sabab:** Lucide CDN bloklangan yoki yuklanmagan.
-
-**Yechim:**
-1. Browser console'ni tekshiring (F12)
-2. Internet ulanishini tekshiring
-3. CDN linkini yangilang:
-   ```html
-   <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
-   ```
-
-### Rasmlar yuklanmayapti?
-**Sabab:** Fayl yo'li noto'g'ri yoki rasm mavjud emas.
-
-**Yechim:**
-1. `assets/images/` papkasini tekshiring
-2. Rasm nomlari to'g'ri yozilganligini tekshiring
-3. Browser console'da 404 xatolarini qidiring
-
-### Sahifa file:// da ishlamayapti?
-**Sabab:** CORS xavfsizlik cheklovi (Lucide CDN uchun).
-
-**Yechim:**
-1. Local server ishga tushiring:
-   ```bash
-   python -m http.server 8000
-   ```
-2. Yoki Netlify'ga deploy qiling
-
-### Netlify deploy muvaffaqiyatsiz?
-**Sabab:** Build command yoki publish directory noto'g'ri.
-
-**Yechim:**
-1. Build command: `echo 'No build required'`
-2. Publish directory: `.` (root)
-3. `netlify.toml` fayli mavjudligini tekshiring
-
-## 🚀 Netlify Deploy Checklist
-
-✅ **Tayyorlik:**
-- [x] `netlify.toml` konfiguratsiya fayli
-- [x] `_redirects` SPA routing uchun
-- [x] `.gitignore` keraksiz fayllar uchun
-- [x] `package.json` metadata uchun
-- [x] Barcha rasmlar `assets/images/` da
-- [x] CSS/JS fayllar to'g'ri linklar bilan
-
-✅ **Deploy qilishdan oldin:**
-- [ ] Local serverda test qiling
-- [ ] Barcha sahifalarni tekshiring
-- [ ] Mobil responsive'ni tekshiring
-- [ ] Browser console'da xato yo'qligini tekshiring
-- [ ] Rasmlar yuklanishini tekshiring
-
-✅ **Deploy jarayoni:**
-- [ ] Netlify'ga login qiling
-- [ ] Loyihani upload qiling
-- [ ] Build log'larni tekshiring
-- [ ] Deploy URL'ni oching
-- [ ] Barcha funksiyalarni test qiling
-
-## 📞 Yordam
-
-**Muammo yuzaga kelsa:**
-1. `diagnostics.html` faylini oching - muammoni avtomatik aniqlaydi
-2. Browser console (F12) da xatolarni tekshiring
-3. Network tab'da yuklanmagan fayllarni qidiring
-
-**Savollar uchun:**
-- Email: support@hajsave.uz
-- Telegram: @HajSaveSupport
-- GitHub Issues: [hajsave/issues](https://github.com/yourusername/hajsave/issues)
-
----
-
-**Ishlab chiqildi:** MiniMax Agent  
-**Yangilandi:** 2025-11-19  
-**Versiya:** 2.0.0  
-**Rasmlar hajmi:** 1.3 MB  
-**Icon kutubxonasi:** Lucide Icons (CDN)  
-**Deploy platform:** Netlify Ready ✅
-
-🕌 **Muqaddas joylarga ishonchli yo'lingiz!**
+**Buyurtmachi:** Abduraxmonov Javoxir  
+**Ishlab chiqaruvchi:** Team  
+**Versiya:** 1.0  
+**Sana:** 2025-11-20
