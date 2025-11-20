@@ -13,6 +13,16 @@
     --danger: #ef4444;
     --warning: #f59e0b;
 
+    /* Text Colors */
+    --text: rgba(255, 255, 255, 0.95);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+
+    /* Backgrounds */
+    --bg: rgba(0, 0, 0, 0.2);
+    --card-bg: linear-gradient(135deg, rgba(0, 212, 170, 0.05), rgba(0, 132, 255, 0.05));
+    --border: rgba(255, 255, 255, 0.1);
+
     --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
     --gradient-gold: linear-gradient(135deg, var(--gold), #ff8c00);
     --gradient-purple: linear-gradient(135deg, var(--purple), #6366f1);
@@ -26,6 +36,7 @@
     --radius-md: 12px;
     --radius-lg: 20px;
     --radius-xl: 30px;
+    --radius: 12px;
 
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease;
